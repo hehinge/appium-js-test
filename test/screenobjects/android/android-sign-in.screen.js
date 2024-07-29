@@ -83,6 +83,18 @@ class SignInScreen {
     get pageTitle() {
         return $('//*[@resource-id="co.hinge.app.internal:id/pageTitle"]');
     }
+
+    get profileTabBtn() {
+        return $('//*[@resource-id="co.hinge.app.internal:id/profileButton"]');
+    }
+
+    get settingsBtn() {
+        return $('//android.view.View[@content-desc="Settings"]');
+    }
+
+    get logoutBtn() {
+        return $('//*[@resource-id="co.hinge.app.internal:id/account_log_out_button"]');
+    }
 }
 
 export default new SignInScreen();
